@@ -10,7 +10,7 @@ In this Sherlock, you will become acquainted with MFT (Master File Table) forens
 
 The first step is to use MFTECmd to parse the MFT and write the output to a CSV that we can process in TimeLine Explorer.
 
-![image](https://github.com/user-attachments/assets/21174ef0-19c1-4e39-b6cc-e1433c877741)
+![image](https://github.com/user-attachments/assets/3e369662-4f86-44f3-a0b6-dffa553f3dce)
 
 As you can see below, the parsing was successful, and the tool output a CSV
 
