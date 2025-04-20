@@ -32,6 +32,7 @@ To find the zone identifier we can remove the .zip filter and search for file na
 
 **What is the full path and name of the malicious file that executed malicious code and connected to a C2 server?**
 Again, we clear the filters and proceed to apply a filter for files that have "stage" on the Parent Path 
+
 ![image](https://github.com/user-attachments/assets/664e6c5b-703f-4ca8-88d3-843174f9625b)
 
 From examining the paths here and the associated files, we can see that the only one that can satisfy the criteria is invoice.bat. Putting the path and file name together we get the full path C:\Users\simon.stark\Downloads\Stage-20240213T093324Z-001\Stage\invoice\invoices and file name invoice.bat.
@@ -44,6 +45,41 @@ This task is simple as we merely need to look ath the Created0x30 column to get 
 ![image](https://github.com/user-attachments/assets/83057033-0088-4634-9566-956dce514f18)
 
 ## Task 5
+**Finding the hex offset of an MFT record is beneficial in many investigative scenarios. Find the hex offset of the stager file from Question 3.**
+
+To do this we obtain the entry number of 23436 and multiply by 1024 to get the decimal representation which works out to be  23,998,464
+
+![image](https://github.com/user-attachments/assets/b70de573-f2bd-4b62-8baf-38fbe0141d27)
+
+
+![image](https://github.com/user-attachments/assets/34524bcb-3c42-4761-b05d-d6663fb94feb)
+
+Converting this decimal value to Hex we get the value 16E3000
+
+![image](https://github.com/user-attachments/assets/141c1fc5-83e0-4282-9dad-c3bd7aeb3f5a)
+
+
+## Task 6
+
+**Each MFT record is 1024 bytes in size. If a file on disk has smaller size than 1024 bytes, they can be stored directly on MFT File itself. These are called MFT Resident files. During Windows File system Investigation, its crucial to look for any malicious/suspicious files that may be resident in MFT. This way we can find contents of malicious files/scripts. Find the contents of The malicious stager identified in Question3 and answer with the C2 IP and port.**
+
+To accomplish this, we import our $MFT record to HxD or any other hex editor of your choice. Next, we use the Go to function Ctrl-G and type in the offset 16E3000.
+
+![image](https://github.com/user-attachments/assets/b15242a1-b08b-48ea-b915-99692c8f73b7)
+
+We then look for any network-related addresses and find the address "http://43.204.110.203:6666", From this we can infer that the C2 is at the address 43.204.110.203:6666.
+
+![image](https://github.com/user-attachments/assets/1d262525-1bce-4c2d-9999-d24c870a02b1)
+
+
+
+
+
+
+
+
+
+
 
 
 
