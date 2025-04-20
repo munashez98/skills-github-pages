@@ -22,6 +22,43 @@ To find the file in question we can filter by Extension and look for records tha
 
 
 ## Task 2
+**Examine the Zone Identifier contents for the initially downloaded ZIP file. This field reveals the HostUrl from where the file was downloaded, serving as a valuable Indicator of Compromise (IOC) in our investigation/analysis. What is the full Host URL from where this ZIP file was downloaded?**
+
+To find the zone identifier we can remove the .zip filter and search for file names that contain "stage". From this we can find the corresponding zone identifier file including the host URL.
+
+![image](https://github.com/user-attachments/assets/356192b3-8bdf-4444-b519-76d94ed7e2e5)
+
+## Task 3 
+
+**What is the full path and name of the malicious file that executed malicious code and connected to a C2 server?**
+Again, we clear the filters and proceed to apply a filter for files that have "stage" on the Parent Path 
+![image](https://github.com/user-attachments/assets/664e6c5b-703f-4ca8-88d3-843174f9625b)
+
+From examining the paths here and the associated files, we can see that the only one that can satisfy the criteria is invoice.bat. Putting the path and file name together we get the full path C:\Users\simon.stark\Downloads\Stage-20240213T093324Z-001\Stage\invoice\invoices and file name invoice.bat.
+
+## Task 4 
+
+**Analyze the $Created0x30 timestamp for the previously identified file. When was this file created on disk?**
+This task is simple as we merely need to look ath the Created0x30 column to get 2024-02-13 16:38:39
+
+![image](https://github.com/user-attachments/assets/83057033-0088-4634-9566-956dce514f18)
+
+## Task 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
