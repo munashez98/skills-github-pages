@@ -67,7 +67,7 @@ To accomplish this, we import our $MFT record to HxD or any other hex editor of 
 
 ![image](https://github.com/user-attachments/assets/b15242a1-b08b-48ea-b915-99692c8f73b7)
 
-We then look for any network-related addresses and find the address "http://43.204.110.203:6666", From this we can infer that the C2 is at the address 43.204.110.203:6666.
+We then look for any network-related addresses and find the address "http[:]//43[.]204[.]110[.]203[:]6666", From this we can infer that the C2 is at the address 43.204.110.203:6666.
 
 ![image](https://github.com/user-attachments/assets/1d262525-1bce-4c2d-9999-d24c870a02b1)
 
