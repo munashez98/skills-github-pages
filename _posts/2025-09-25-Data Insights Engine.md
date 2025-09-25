@@ -1,6 +1,6 @@
 # Data Insights Engine Tool
 
-This tool makes it easy to get a quick look at your datasets. Whether you want summary stats, charts, outlier detection, or even basic classification insights, it handles the heavy lifting so you can focus on understanding your data and making decisions—no setup headaches required.
+This [tool](https://github.com/munashez98/Data-Insight-Engine) makes it easy to get a quick look at your datasets. Whether you want summary stats, charts, outlier detection, or even basic classification insights, it handles the heavy lifting so you can focus on understanding your data and making decisions—no setup headaches required.
 
 To build this script, I combined Python’s powerful data libraries like Pandas, scikit-learn, and TensorFlow with automation for charting, outlier detection, and classification. The process was much smoother thanks to Vibe Coding, which helped me organize the workflow and speed up development. The result is a tool that can take any CSV dataset and turn it into actionable insights in just a few steps.
 
