@@ -13,7 +13,7 @@ _Here are some things I have been working on including CTFs._
 
 ## Tools
 
-- [Data Insights Engine Tool](https://github.com/munashez98/Data-Insight-Engine)
+- [Data Insights Engine Tool](https://github.com/munashez98/skills-github-pages/blob/main/_posts/2025-09-25-Data%20Insights%20Engine.md)
 
 </header>
 
